@@ -22,7 +22,6 @@ public class App {
                 System.out.println(" It's a draw!");
                 break;
             }
-
             computerMove(board);
             if (checkWinner(board, 'O')) {
                 printBoard(board);
@@ -93,7 +92,7 @@ public class App {
         return false;
     }
 
-    private static boolean isDraw(char[] board) {
+    public static boolean isDraw(char[] board) {
         for (char c : board) {
             if (c != 'X' && c != 'O') {
                 return false;
